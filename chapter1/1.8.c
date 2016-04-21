@@ -20,7 +20,6 @@
 			++nl;
 		else
 			continue;
-
 	}
 	printf("Blanks:%d\nNewlines:%d\nTabs:%d\n",nb,nl,nt);
 
