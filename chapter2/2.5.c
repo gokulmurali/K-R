@@ -28,7 +28,7 @@
 	for(i=0; i<256; i++)
 		count[i] =0;
 
-	//For any character in s2, count of that character is given character count of that character in s2
+	//For any character in s2, count of that character is given character count upto that character in s2
 	for(i=0,j=1; s2[i] != '\n'; i++){
 		if(!count[s2[i]]){
 			count[s2[i]] = j++;
