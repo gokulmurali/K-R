@@ -9,7 +9,7 @@
 	int l = 0, n_bits = 0;
 	//printf("%d\n",size);
 	n_bits = (x >>(p+1-n)) & ~(~0 << n);    // K&R n_bits, getbits(x,p,n) function
-	l = (x & (~0 << y+1));     		//Leftmost(first) bits of x above position p
+	l = (x & (~0 << y+1));     		//Leftmost(first) bits of x above position y
 	int m = (n_bits << (y+1-n)); 		//n bits from position p shifted to position y
 	int r = (x & ~(~0 << (y+1-n))); 	//rightmost(last) bits of x after n bits from position y
 	//printf("%d\t%d\t%d\t%d \n",l,m,r,l|m|r);
